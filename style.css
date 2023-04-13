@@ -1,0 +1,366 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  margin: 12px;
+  font-family: "Alkatra", cursive;
+  font-family: "Happy Monkey", cursive;
+  overflow-x: hidden;
+}
+
+iframe {
+  border: none;
+}
+
+header {
+  background-image: url(https://zelihapala.github.io/images/silicon.webp);
+  background-size: cover;
+  color: rgba(30, 39, 83, 0.945);
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  background-position: center;
+  text-shadow: 7px 5px rgba(255, 255, 255, 0.973);
+}
+
+.btn {
+  display: flex;
+  float: right;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 3px solid white;
+  border-radius: 60px;
+  background-color: rgba(6, 114, 114, 0.993);
+  color: white;
+  font-size: 15px;
+  font-family: "Alkatra", cursive;
+  font-family: "Happy Monkey", cursive;
+}
+
+.btn:hover {
+  background: rgb(11, 21, 36);
+  font-size: 17px;
+}
+
+.search-box {
+  max-width: 60px;
+  position: relative;
+}
+
+input {
+  display: flex;
+  width: 120px;
+  height: 4px;
+  margin: 20px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  background: rgba(255, 255, 255, 0.932);
+  padding: 25px;
+}
+
+input:hover {
+  box-shadow: 0 0 8px 1px white;
+}
+
+#search {
+  width: 150px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 8px 20px 8px 40px;
+  border: 2px solid rgb(223, 223, 228);
+}
+
+#search:focus {
+  width: 100%;
+}
+
+.top-logo {
+  position: relative;
+
+  font-size: 180%;
+  font-family: "Alkatra", cursive;
+}
+
+#introduction {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px 100% 0px 40%;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+}
+
+.bg-img {
+  background-image: url(https://zelihapala.github.io/images/me.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 25%;
+  height: 600px;
+
+  border: 3px solid rgba(6, 114, 114, 0.301);
+  border-radius: 100px 0px 140px 0px;
+}
+
+.navcolor {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  text-align: center;
+  background-position: center;
+  text-shadow: 5px 3px rgba(15, 3, 3, 0.973);
+}
+
+.main {
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px 0px 60px;
+}
+
+.main .technology {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.p-main {
+  font-size: 100%;
+}
+
+.paragraf-main {
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: rgb(49, 48, 48);
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 1px 10px 1px 40px;
+  margin: 4px;
+  background-color: rgb(6, 114, 114);
+}
+
+.section-middle:hover {
+  background: rgba(3, 39, 39, 0.993);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: rgb(255, 255, 255);
+  padding: 10px 40px;
+  text-decoration-line: none;
+  font-size: 20px;
+  display: flex;
+}
+
+.c-site-footer {
+  background-image: url(https://zelihapala.github.io/images/AL.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 10px 0px;
+  margin-top: 30px;
+  text-align: center;
+  border-top: solid 8px rgba(6, 114, 114, 0.993);
+  border-bottom: solid 8px rgba(6, 114, 114, 0.993);
+  display: flex;
+  justify-content: space-between;
+}
+
+.part {
+  width: 30%;
+}
+.social-media div {
+  display: inline;
+}
+.social-media div a {
+  background: rgb(5, 114, 114);
+  text-decoration: none;
+  color: rgba(255, 254, 255, 0.993);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.397);
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 30px;
+  overflow: hidden;
+  position: relative;
+  line-height: 50px;
+  text-align: center;
+}
+
+.social-media a {
+  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
+    border-top-right-radius 0.1s linear 0.1s,
+    border-bottom-right-radius 0.1s linear 0.2s,
+    border-bottom-left-radius 0.1s linear 0.3s;
+}
+
+.social-media .instagram a:hover {
+  background-color: rgb(182, 53, 124);
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+.social-media .twitter a:hover {
+  background-color: #41c9eb;
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+.social-media .youtube a:hover {
+  background-color: #bb0000;
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+.social-media .whatsapp a:hover {
+  background-color: #06803d;
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+.social-media .slack a:hover {
+  background-color: #530640;
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+#follow-me {
+  color: white;
+  font-size: 23px;
+  margin: 7px 0px 25px;
+}
+#copy {
+  color: white;
+  text-shadow: 1px solid black;
+  font-size: 20;
+  margin-top: 20px;
+}
+
+.mylogo {
+  width: 25%;
+  margin-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 35%;
+}
+
+.scroll {
+  font-weight: 100;
+  font-size: 19px;
+  font-weight: bolder;
+  color: rgba(6, 114, 114, 0.993);
+
+  animation: marquee 10s linear infinite;
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.gallery {
+  width: 650px;
+  margin: 0px auto;
+  padding: 6px;
+  background: #fff;
+  box-shadow: 0 10px 2px pink;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  height: 150px;
+  transition: 0.1s transform;
+  transform: translateZ(0);
+}
+
+.gallery > div:hover {
+  z-index: 2;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7, 1.7);
+  transition: 0.4s transform;
+}
+
+.pic:before,
+.pic:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.pic:after {
+  clear: both;
+}
+
+h1 {
+  font-size: 20px;
+  letter-spacing: 0.1px;
+
+  margin: 10px 0;
+
+  font-weight: 300;
+  text-align: center;
+}
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors {
+  display: none;
+}
