@@ -108,24 +108,26 @@ input:hover {
 
 .tourism {
   text-align: center;
+  
+  margin-top: 30px;
+  margin-top: 0px 100% 0px 40%;
+  font-size: 16px;
+  
+  letter-spacing: 0.1px;
+  justify-content: space-between;
 }
 
+
 .tourism h1 {
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 30px;
   margin-top: 0px 100% 0px 40%;
   font-size: 20x;
   letter-spacing: 0.1px;
   
 }
-h3 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-top: 0px 100% 0px 40%;
-  font-size: 18px;
-  letter-spacing: 0.1px;
-  justify-content: space-between;
-}
+
+  
 
 
 .tourism .p-main {
@@ -495,18 +497,43 @@ h1 {
   }
   #previous,
   #next {
-    background-color: #8e44ad; 
-    color: #fff;  margin-right: 2rem;}
-
-  #next {
-    background-color: #3498db;
+      display: inline-block;
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+      background: radial-gradient(100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+      box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px rgba(58, 65, 111, 0.5);
+      padding: 0 32px;
+      border-radius: 6px;
+      color: #fff;
+      height: 48px;
+      font-size: 18px;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
   }
-
+  
   #previous:hover,
   #next:hover {
-    background-color: #2980b9; 
+      box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px #3c4fe0;
+      transform: translateY(-2px);
   }
-
+  
+  #previous:active,
+  #next:active {
+      box-shadow: inset 0px 3px 7px #3c4fe0;
+      transform: translateY(2px);
+  }
+  
+  #previous {
+      background-color: #8e44ad;
+      color: #fff;
+      margin-right: 2rem;
+  }
+  
+  #next {
+      background-color: #3498db;
+  }
+  
 #centre {
        display: flex;
     justify-content: center; 
