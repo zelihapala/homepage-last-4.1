@@ -1,20 +1,11 @@
-/* =================
-  TESTS, LOOK AT THESE
-  Reading tests will always help you discover your requirements.
-  You can make this window bigger. 
-   ===================
-*/
+
 
 const {
   core: { test, expect, run },
   prettify
 } = window.jestLite;
 
-/* =================
-  FIND ELEMENTS
-  These are all the elements we will look for.
-   ===================
-*/
+
 const getHeader = document.querySelectorAll("header"),
   getH1 = document.querySelectorAll("h1"),
   getSiteHeader = document.querySelectorAll(".c-site-header"),
@@ -26,13 +17,7 @@ const getHeader = document.querySelectorAll("header"),
   getImage = document.querySelectorAll("img"),
   getWords = document.body.innerText;
 
-/* =================
-   ASSERTIONS 
-   These are the things we check are true about your page.
-   Read and update your HTML to discover the requirements.
-   The tests will run every time you update your code.
-   ===================
-*/
+
 test("There is at least one header element", () => {
   expect(getHeader.length).toBeGreaterThanOrEqual(1);
 });
@@ -66,3 +51,58 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
+
+
+
+var commentList;
+
+function convertToNumber(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return 0
+  } else {
+    return number_value
+  }
+}
+
+
+commentList = [];
+
+
+document.getElementById('submit').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  element_list.innerText = document.getElementById('comment-text').value;
+  commentList.unshift(document.getElementById('comment-text').value);
+  element_list.replaceChildren();
+  element_list.innerText = 'You have submitted your comment!';
+
+});
+
+
+
+
+
+var imageUrlList;
+
+
+imageUrlList = ['https://cdn1.ntv.com.tr/gorsel/OEJa83m7B0WOYi2Yc-5ipg.jpg?width=1000&mode=crop&scale=both', 'https://julesverne.com.tr/wp-content/uploads/2020/09/aurora.jpg', 'https://www.turkeyholidaydiary.com/wp-content/uploads/2019/01/uludag-ski-center-2.jpg', 'https://api.time.com/wp-content/uploads/2014/10/451570967.jpg', 'https://img.freepik.com/premium-photo/africa-nature-landscape-with-green-trees-mountains-field-blue-clear-sky-3d-illustration_76964-3120.jpg?w=2000', 'https://wallpapers.com/images/featured/summer-pictures-nyv022soo0r5p1sq.jpg'];
+let element_showImage = document.getElementById('showImage');
+element_showImage.setAttribute("src", imageUrlList[0]);
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_showImage2 = document.getElementById('showImage');
+  imageUrlList.push(imageUrlList[0]);
+  imageUrlList.shift();
+  element_showImage2.setAttribute("src", imageUrlList[0]);
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_showImage3 = document.getElementById('showImage');
+  imageUrlList.unshift(imageUrlList.slice(-1)[0]);
+  imageUrlList.pop();
+  element_showImage3.setAttribute("src", imageUrlList[0]);
+
+});
