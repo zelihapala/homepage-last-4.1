@@ -1,11 +1,4 @@
-/* =================
-  WRITE YOUR CSS HERE.
-  Check the ⌄ for help with formatting and validating your code.
-  You must write some CSS to complete this challenge.
-   ===================
-*/
 
-html,
 body {
   margin: 0;
   height: 100%;
@@ -19,6 +12,12 @@ body {
 
 iframe {
   border: none;
+  width: 650px;
+  margin: 0px auto;
+  padding: 6px;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 2px pink;
 }
 
 header {
@@ -30,6 +29,9 @@ header {
   font-size: 50px;
   background-position: center;
   text-shadow: 7px 5px rgba(255, 255, 255, 0.973);
+
+
+  
 }
 
 .btn {
@@ -101,7 +103,96 @@ input:hover {
   font-size: 20px;
   letter-spacing: 0.1px;
 }
+ 
 
+
+.tourism {
+  text-align: center;
+}
+
+.tourism h1 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-top: 0px 100% 0px 40%;
+  font-size: 20x;
+  letter-spacing: 0.1px;
+  
+}
+h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-top: 0px 100% 0px 40%;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  justify-content: space-between;
+}
+
+
+.tourism .p-main {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-wrapper iframe {
+  width: 40%;
+  height: 320px;
+}
+
+.content-wrapper .gallery {
+
+  
+  width: 650px;
+  margin: 0px auto;
+  padding: 6px;
+  background: #fff;
+  box-shadow: 0 10px 2px pink;
+}
+
+.content-wrapper .gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.content-wrapper .gallery > div > img {
+  display: block;
+  width: 200px;
+  height: 150px;
+  transition: 0.1s transform;
+  transform: translateZ(0);
+}
+
+.content-wrapper .gallery > div:hover > img {
+  transform: scale(1.7, 1.7);
+  transition: 0.4s transform;
+}
+
+.content-wrapper .gallery > div:hover {
+  z-index: 2;
+}
+
+.content-wrapper gallery > div:hover > img {
+  transform: scale(1.7, 1.7);
+  transition: 0.4s transform;
+}
+
+.pic:before,
+.pic:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.pic:after {
+  clear: both;
+}
 .bg-img {
   background-image: url(https://zelihapala.github.io/images/me.jpg);
   background-size: cover;
@@ -130,12 +221,22 @@ input:hover {
   justify-content: space-between;
   align-items: flex-start;
   margin: 20px 0px 60px;
+  
+  margin: 0px auto;
+  padding: 6px;
+  background: #fff;
+  box-shadow: 0 10px 2px pink;
 }
 
 .main .technology {
   width: 100%;
   height: 100%;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  padding: 6px;
+  background: #fff;
+  box-shadow: 0 10px 3px pink;
 }
 
 .p-main {
@@ -151,6 +252,7 @@ input:hover {
   text-align: justify;
   color: rgb(49, 48, 48);
 }
+
 
 ul {
   list-style-type: none;
@@ -181,12 +283,17 @@ li a {
   background-position: center center;
   background-size: cover;
   padding: 10px 0px;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom:  50px;
   text-align: center;
   border-top: solid 8px rgba(6, 114, 114, 0.993);
   border-bottom: solid 8px rgba(6, 114, 114, 0.993);
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 40px 3px pink;
+
+
+  
 }
 
 .part {
@@ -275,11 +382,12 @@ li a {
 }
 
 .tech {
-  display: flex;
+  display:flex;
+  vertical-align: top;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  width: 35%;
+  width: 30%;
 }
 
 .scroll {
@@ -306,47 +414,6 @@ li a {
   }
 }
 
-.gallery {
-  width: 650px;
-  margin: 0px auto;
-  padding: 6px;
-  background: #fff;
-  box-shadow: 0 10px 2px pink;
-}
-
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 5px;
-}
-
-.gallery > div > img {
-  display: block;
-  width: 200px;
-  height: 150px;
-  transition: 0.1s transform;
-  transform: translateZ(0);
-}
-
-.gallery > div:hover {
-  z-index: 2;
-}
-
-.gallery > div:hover > img {
-  transform: scale(1.7, 1.7);
-  transition: 0.4s transform;
-}
-
-.pic:before,
-.pic:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.pic:after {
-  clear: both;
-}
 
 h1 {
   font-size: 20px;
@@ -357,10 +424,96 @@ h1 {
   font-weight: 300;
   text-align: center;
 }
-/* don't edit this */
-.jest-lite-report__status--pass {
-  background: var(--color-pass);
-}
-.jest-lite-report__errors {
-  display: none;
-}
+
+
+  #comments {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 30px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    width: 70%; 
+    margin: 0 auto; /*  center horizontally */
+    align-items: center;
+    text-align: center; 
+    background-color:rgb(216, 241, 241)
+  
+  }
+
+
+  #addComment {
+    font-size: 18px;
+    font-weight: bold;
+    
+   
+  }
+  /* #comment-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }*/
+
+
+
+
+  #comment-text {
+  width: 90%; 
+  height: 120px; 
+  margin: 10px 0; /* space around textarea  not sure*/
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: none; }
+
+
+
+  #submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
+    }
+
+    #submit:hover {
+      background-color: rgb(228, 128, 166);
+    }
+  #list {
+    list-style: none;
+    padding: 0;
+  }
+  #list li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  #previous,
+  #next {
+    background-color: #8e44ad; 
+    color: #fff;  margin-right: 2rem;}
+
+  #next {
+    background-color: #3498db;
+  }
+
+  #previous:hover,
+  #next:hover {
+    background-color: #2980b9; 
+  }
+
+#centre {
+       display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 1rem;
+  }
+img {
+  width: 90%;
+  margin-top: 1rem;
+  }
